@@ -302,7 +302,7 @@ function inicializarEventos() {
     // Evento: Escribir en el input de búsqueda (búsqueda en tiempo real)
     if (searchInput) {
         searchInput.addEventListener('input', buscarPeliculas);
-        console.log('✓ Evento búsqueda en tiempo real vinculado');
+        console.log('Evento búsqueda en tiempo real vinculado');
         
         // Evento: Presionar Enter en el input
         searchInput.addEventListener('keypress', (e) => {
@@ -330,7 +330,7 @@ function inicializarEventos() {
         });
         console.log('✓ Eventos de categorías vinculados');
     } else {
-        console.error('❌ No se encontraron botones de categoría');
+        console.error(' No se encontraron botones de categoría');
     }
     
     // ========== BOTÓN DE MENÚ ==========
@@ -373,20 +373,3 @@ function limpiarBusqueda() {
     searchInput.value = '';
     buscarPeliculas();
 }
-
-// ========================================
-// API PÚBLICA PARA OTROS COMPAÑEROS
-// ========================================
-
-// Objeto que expone funciones para que otros archivos JS puedan usarlas
-// Se accede como: window.dashboardAPI.obtenerPeliculaPorId(5)
-window.dashboardAPI = {
-    // Función para buscar una película por su ID
-    obtenerPeliculaPorId: (id) => peliculasData.find(p => p.id === id),
-    
-    // Función para obtener todas las películas
-    obtenerTodasLasPeliculas: () => peliculasData,
-    
-    // Función para limpiar la búsqueda
-    limpiarBusqueda: limpiarBusqueda
-};

@@ -26,7 +26,8 @@ body {
 /* CONTENEDOR PRINCIPAL */
 #dashboard {
     background-color: #1a1a1a;
-    width: 430px;
+    width: 100%;
+    max-width: 600px;
     height: 932px;
     border-radius: 40px;
     overflow: hidden;
@@ -302,7 +303,7 @@ body {
 }
 
 /* RESPONSIVE (por si acaso) */
-@media (max-width: 430px) {
+@media (max-width: 600px) {
     body {
         padding: 0;
     }
