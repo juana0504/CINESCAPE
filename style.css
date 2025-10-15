@@ -1,0 +1,96 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* SECCIÓN PRINCIPAL */
+#home {
+  background-color: #0c0c10;
+  border-radius: 30px;
+  width: 390px;
+  height: 882px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* CONTENEDOR DE IMÁGENES */
+.imagenes {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.imagenes img {
+  width: 100%;
+  display: block;
+  transform-origin: center;
+}
+
+/* EFECTO DIAGONAL DE LAS IMÁGENES */
+.imagenes img:nth-child(1) {
+  transform: rotate(-10deg) translateY(-60px);
+}
+
+.imagenes img:nth-child(2) {
+  transform: rotate(-10deg) translateY(-120px);
+}
+
+.imagenes img:nth-child(3) {
+  transform: rotate(-10deg) translateY(-180px);
+}
+
+/* MENSAJE Y LOGO */
+.mensaje {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.mensaje img {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.mensaje p {
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+/* BOTÓN */
+button {
+  background: linear-gradient(90deg, #00aaff, #9b5bff);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(155, 91, 255, 0.6);
+}

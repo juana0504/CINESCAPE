@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mission: Impossible – Dead Reckoning",
+    "anio": 2023,
+    "categoria": "Acción",
+    "sinopsis": "Ethan Hunt y su equipo enfrentan su misión más desafiante hasta ahora: detener una inteligencia artificial descontrolada capaz de manipular cualquier sistema global. Con el destino del mundo en juego, Hunt deberá decidir entre la vida de sus seres queridos y el futuro de la humanidad.",
+    "ruta_caratula": "caratulas/mission_impossible.jpg",
+    "reparto": ["Tom Cruise", "Hayley Atwell", "Ving Rhames"]
+  },
+  {
+    "id": 2,
+    "nombre": "Talk to Me",
+    "anio": 2023,
+    "categoria": "Terror",
+    "sinopsis": "Un grupo de adolescentes descubre una mano embalsamada que les permite contactar con espíritus. Fascinados por la experiencia, cruzan los límites del ritual, desatando fuerzas que no pueden controlar y enfrentándose a horrores que los seguirán incluso cuando termine el juego.",
+    "ruta_caratula": "caratulas/talk_to_me.jpg",
+    "reparto": ["Sophie Wilde", "Joe Bird", "Alexandra Jensen"]
+  },
+  {
+    "id":3,
+    "nombre": "A Través de Mi Ventana",
+    "anio": 2023,
+    "categoria": "Romance",
+    "sinopsis": "Raquel ha estado enamorada de su vecino Ares durante años. Aunque nunca han hablado, el destino los une en una historia apasionada y complicada que desafiará sus prioridades, su familia y sus planes de vida.",
+    "ruta_caratula": "caratulas/a_traves_de_mi_ventana.jpg",
+    "reparto": ["Clara Galle", "Julio Peña", "Roger Berruezo"]
+  },
+  {
+    "id":4,
+    "nombre": "Venom: Carnage 2",
+    "anio": 2023,
+    "categoria": "Acción",
+    "sinopsis": "Eddie Brock continúa aprendiendo a convivir con el simbionte Venom. Pero cuando un asesino serial se fusiona con un nuevo simbionte, Carnage, el caos se desata. Eddie deberá superar sus límites para salvar su ciudad y enfrentarse a su enemigo más salvaje.",
+    "ruta_caratula": "caratulas/venom_carnage_2.jpg",
+    "reparto": ["Tom Hardy", "Woody Harrelson", "Naomie Harris"]
+  },
+  {
+    "id":5,
+    "nombre": "Extraction 2",
+    "anio": 2023,
+    "categoria": "Acción",
+    "sinopsis": "Después de sobrevivir milagrosamente a su última misión, el mercenario Tyler Rake es enviado a rescatar a la familia de un mafioso encarcelado. Esta nueva misión lo llevará al límite físico y emocional en una de las operaciones más riesgosas de su carrera.",
+    "ruta_caratula": "caratulas/extraction_2.jpg",
+    "reparto": ["Chris Hemsworth", "Golshifteh Farahani", "Rudhraksh Jaiswal"]
+  },
+  {
+    "id":6,
+    "nombre": "Argylle",
+    "anio": 2024,
+    "categoria": "Acción",
+    "sinopsis": "Una novelista de espionaje descubre que sus historias predicen sucesos reales, lo que la convierte en blanco de una organización secreta. Junto a un espía en la vida real, deberá correr por su vida mientras la ficción y la realidad se entrelazan peligrosamente.",
+    "ruta_caratula": "caratulas/argylle.jpg",
+    "reparto": ["Henry Cavill", "Samuel L. Jackson", "Catherine O'Hara"]
+  },
+  {
+    "id":7,
+    "nombre": "La Primera Profecía",
+    "anio": 2024,
+    "categoria": "Terror",
+    "sinopsis": "Ambientada décadas antes de los eventos de 'La Profecía', una joven monja es enviada a Roma y descubre una conspiración para dar vida al anticristo. A medida que se adentra en los secretos del Vaticano, deberá decidir entre la fe y la verdad que podría destruir todo lo que conoce.",
+    "ruta_caratula": "caratulas/la_primera_profecia.jpg",
+    "reparto": ["Nell Tiger Free", "Sônia Braga", "Ralph Ineson"]
+  },
+  {
+    "id":8,
+    "nombre": "The Night Fury",
+    "anio": 2025,
+    "categoria": "Acción",
+    "sinopsis": "En un mundo donde los dragones son solo leyendas, una criatura alada resurge con una furia imparable. Una joven con un misterioso vínculo con el animal deberá enfrentarse a fuerzas humanas y mágicas para evitar una catástrofe global.",
+    "ruta_caratula": "caratulas/the_night_fury.jpg",
+    "reparto": ["Mason Thames", "Gerard Butler", "Nico Parker"]
+  },
+  {
+    "id":9,
+    "nombre": "Mala Influencia",
+    "anio": 2024,
+    "categoria": "Romance",
+    "sinopsis": "Carlos, un joven introvertido, conoce a Abril, una chica carismática y rebelde que lo arrastra a un mundo de decisiones cuestionables. Lo que comienza como un romance adolescente, se convierte en una prueba entre el amor, la lealtad y los límites del peligro.",
+    "ruta_caratula": "caratulas/mala_influencia.jpg",
+    "reparto": ["Eléa Rochera", "Alberto Olmo", "Sara Ariño"]
+  },
+  {
+    "id":10,
+    "nombre": "Thunderbolts",
+    "anio": 2025,
+    "categoria": "Acción",
+    "sinopsis": "Reunidos por una agencia gubernamental, un grupo de villanos reformados —o al menos eso aparentan— acepta realizar misiones clandestinas a cambio de redención. Sin embargo, sus verdaderas motivaciones saldrán a la luz en medio de una operación que podría costarles la vida.",
+    "ruta_caratula": "caratulas/thunderbolts.jpg",
+    "reparto": ["Sebastian Stan", "Olivia Wilde", "David Harbour"]
+  },
+  {
+    "id":11,
+    "nombre": "John Wick: Chapter 4",
+    "anio": 2023,
+    "categoria": "Acción",
+    "sinopsis": "John Wick continúa su lucha por la libertad mientras enfrenta al Alto Mando y a nuevos enemigos internacionales. Cada paso hacia la redención lo obliga a pagar un precio más alto, mientras las reglas del juego cambian constantemente.",
+    "ruta_caratula": "caratulas/john_wick_4.jpg",
+    "reparto": ["Keanu Reeves", "Donnie Yen", "Bill Skarsgård"]
+  },
+  {
+    "id":12,
+    "nombre": "Abismo Secreto",
+    "anio": 2024,
+    "categoria": "Terror",
+    "sinopsis": "Un equipo de científicos se adentra en una caverna submarina recién descubierta. Lo que parecía ser un hallazgo arqueológico se convierte en una pesadilla, cuando despiertan a una entidad ancestral hambrienta de venganza.",
+    "ruta_caratula": "caratulas/abismo_secreto.jpg",
+    "reparto": ["Miles Teller", "Anya Taylor-Joy", "Sigourney Weaver"]
+  },
+   {
+    "id":13,
+    "nombre": "Anyone But You",
+    "anio": 2023,
+    "categoria": "Romance",
+    "sinopsis": "Bea y Ben aparentan ser la pareja perfecta, pero en realidad no se soportan. Cuando se reencuentran en una boda en Australia, acuerdan fingir estar juntos para no lidiar con sus familias. Sin embargo, la cercanía los lleva a cuestionar si hay algo real entre ellos.",
+    "ruta_caratula": "caratulas/anyone_but_you.jpg",
+    "reparto": ["Sydney Sweeney", "Glen Powell", "Bill Murray"]
+  },
+  {
+    "id":14,
+    "nombre": "El Exorcista del Papa",
+    "anio": 2025,
+    "categoria": "Terror",
+    "sinopsis": "Basada en los archivos reales del padre Gabriele Amorth, el exorcista principal del Vaticano. Esta historia revela una batalla espiritual en la que una posesión demoníaca en España podría desencadenar el fin de los tiempos. Fe, misterio y horror se entrelazan en este exorcismo épico.",
+    "ruta_caratula": "caratulas/el_exorcista_del_papa.jpg",
+    "reparto": ["Russell Crowe", "Daniel Zovatto", "Alex Essoe"]
+  },
+  {
+    "id":15,
+    "nombre": "Abigail",
+    "anio": 2024,
+    "categoria": "Terror",
+    "sinopsis": "Un grupo de criminales secuestra a una niña rica y la mantiene cautiva en una mansión. Pero lo que no saben es que la pequeña esconde un oscuro y sangriento secreto. Lo que empezó como un crimen fácil se convierte en una lucha por sobrevivir.",
+    "ruta_caratula": "caratulas/abigail.jpg",
+    "reparto": ["Melissa Barrera", "Dan Stevens", "Alisha Weir"]
+  },
+  {
+    "id":16,
+    "nombre": "A Quiet Place",
+    "anio": 2024,
+    "categoria": "Terror",
+    "sinopsis": "En un mundo donde el más mínimo sonido significa la muerte, una familia lucha por sobrevivir mientras permanece completamente en silencio. Las criaturas que los acechan cazan con el oído, y cualquier error puede ser el último.",
+    "ruta_caratula": "caratulas/a_quiet_place.jpg",
+    "reparto": ["Emily Blunt", "John Krasinski", "Millicent Simmonds"]
+  },
+  {
+    "id":17,
+    "nombre": "Mi Lista de Deseos",
+    "anio": 2023,
+    "categoria": "Romance",
+    "sinopsis": "Después de recibir una noticia que cambia su vida, Valentina crea una lista con todo lo que quiere hacer antes de que sea demasiado tarde. En el camino encontrará el valor para amarse a sí misma, sanar heridas del pasado y descubrir el amor donde menos lo esperaba.",
+    "ruta_caratula": "caratulas/mi_lista_de_deseos.jpg",
+    "reparto": ["Sofia Carson", "Kyle Allen", "Connie Britton"]
+  }
+]
