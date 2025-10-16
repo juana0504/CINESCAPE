@@ -388,13 +388,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función para abrir/cerrar sidebar
     function toggleSidebar() {
         sideBar.classList.toggle('active');
-        overlay.classList.toggle('active');
+
         dashboard.classList.toggle('sidebar-open');
     }
     
     // Event listeners
     menuBtn.addEventListener('click', toggleSidebar);
-    overlay.addEventListener('click', toggleSidebar);
+
     
 
     

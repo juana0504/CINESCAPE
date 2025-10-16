@@ -90,7 +90,12 @@ body {
     cursor: pointer;
     padding: 8px;
     transition: .4s;
+    z-index: 1001;
+    position: absolute;
+    right: 5%;
+
 }
+
 .menu-btn:hover {
     transform: scale(1.1);
 }
@@ -101,7 +106,7 @@ body {
     background-color: #1a1a1a;
     position: sticky;
     top: 90px;
-    z-index: 99;
+    z-index: 0;
 }
 
 .search-label {
@@ -143,7 +148,7 @@ body {
 
 .search-btn {
     position: absolute;
-    right:2px;
+    right: 2px;
     background: linear-gradient(135deg, #1b9ebd, #693a7b);
     border: none;
     border-radius: 50%;
@@ -266,7 +271,8 @@ body {
     transition: 0.3s;
     white-space: nowrap;
 }
-#separador{
+
+#separador {
     border-right: 1px solid #bebebe;
 }
 
@@ -307,6 +313,7 @@ body {
     body {
         padding: 0;
     }
+
     #dashboard {
         width: 100%;
         height: 100vh;
@@ -322,13 +329,12 @@ body {
     right: -50%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-    z-index: 1000;
+    background: #1a1a1a;
+    z-index: 1;
     transition: right 0.3s ease;
     overflow-y: auto;
     padding: 80px 20px 20px;
     box-shadow: -2px 0 20px rgba(0, 0, 0, 0.8);
-    border-left: 1px solid #333;
 }
 
 #side-Bar.active {
@@ -337,8 +343,7 @@ body {
 
 #side-Bar h2 {
     color: #1b9ebd;
-    margin-bottom: 50px;
-    padding-bottom: 15px;
+    margin: 50px 0px;
     border-bottom: 1px solid #333;
     font-size: 22px;
     font-weight: 700;
@@ -357,12 +362,22 @@ body {
     font-weight: 500;
     border: 1px solid transparent;
 }
-#dividir{
+
+#dividir {
     margin-top: 90px;
 }
-#dividir a{
- text-decoration: none;
+
+#dividir a {
+    text-decoration: none;
 }
 
+/* BOTÓN DEL MENÚ CON ANIMACIÓN */
 
 
+/* Cuando el sidebar está activo, el botón se mueve con él */
+#side-Bar.active~.dashboard-header .menu-btn {
+    transform: translateX(-50%);
+    right: 43%;
+
+
+}
