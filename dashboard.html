@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CINESCAPE</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <main id="dashboard">
+        <!-- HEADER FIJO -->
+        <header class="dashboard-header">
+            <div class="user-info">
+                <img src="assets/img/user.png" alt="Isabella" class="profile-pic">
+                <div class="welcome-text">
+                    <span class="bienvenida">Bienvenida</span>
+                    <span class="user-name">Isabella</span>
+                </div>
+            </div>
+            <button class="menu-btn" id="menuBtn">
+                    <img src="assets/img/menu.png" alt="menu desplegable">
+            </button>
+        </header>
+
+        <!-- BARRA DE BÚSQUEDA -->
+        <section class="search-section">
+            <p class="search-label">Encuentra tu película favorita</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar...">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="9" cy="9" r="7" stroke="white" stroke-width="2"/>
+                        <path d="M14 14L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- GRID DE PELÍCULAS -->
+        <section class="movies-grid" id="moviesGrid">
+            <!-- Las películas se cargarán dinámicamente aquí -->
+        </section>
+
+        <!-- FOOTER FIJO CON CATEGORÍAS -->
+        <footer class="categories-footer">
+            <button class="category-btn" data-category="Acción">Acción</button>
+            <span id="separador"></span>
+            <button class="category-btn" data-category="Romance">Romance</button>
+            <span id="separador"></span>
+            <button class="category-btn" data-category="Terror">Terror</button>
+        </footer>
+    </main>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
