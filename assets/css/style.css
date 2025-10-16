@@ -121,6 +121,7 @@ body {
 
 /* BOTÓN */
 a {
+  text-decoration: none;
   bottom: 73px;
   background: linear-gradient(90deg, #00aaff, #9b5bff);
   border: none;
