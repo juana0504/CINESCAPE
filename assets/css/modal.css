@@ -1,0 +1,278 @@
+/* ========================================
+   MODAL OVERLAY (FONDO OSCURO)
+   ======================================== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Cuando el modal está activo */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ========================================
+   CONTENEDOR DEL MODAL
+   ======================================== */
+
+.modal-container {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Animación de entrada (de abajo hacia arriba) */
+.modal-overlay.active .modal-container {
+    transform: translateY(0);
+}
+
+/* ========================================
+   BOTÓN DE CERRAR
+   ======================================== */
+
+.modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.modal-close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.modal-close-btn img {
+    width: 30px;
+}
+
+/* ========================================
+   CONTENIDO DEL MODAL
+   ======================================== */
+
+.modal-content {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Scrollbar personalizado para el modal */
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+/* ========================================
+   POSTER DE LA PELÍCULA
+   ======================================== */
+
+.modal-poster-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.modal-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Gradiente sobre la imagen */
+.modal-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(180deg, transparent 0%, #0a0a0a 100%);
+    pointer-events: none;
+}
+
+/* ========================================
+   INFORMACIÓN DE LA PELÍCULA
+   ======================================== */
+
+.modal-info {
+    padding: 2px 24px 24px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Título de la película */
+.modal-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Metadatos (Categoría y Año) */
+.modal-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.modal-category {
+    color: #1b9ebd;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.modal-separator {
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+
+.modal-year {
+    color: #1b9ebd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#modalOverlay .modal-info hr{
+    border: none;
+    border-top: 1px solid #1b9ebd;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 20px;
+}
+
+/* Sinopsis */
+.modal-sinopsis {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+/* ========================================
+   SECCIÓN DE REPARTO
+   ======================================== */
+
+.modal-cast {
+    margin-bottom: 35px;
+}
+
+.cast-label {
+    color: #1b9ebd;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.cast-names {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* ========================================
+   BOTÓN VER PELÍCULA
+   ======================================== */
+
+.modal-watch-btn {
+    width: 55%;
+    background: linear-gradient(135deg, #1b9ebd, #693a7b);
+    border: none;
+    border-radius: 30px;
+    padding: 16px 24px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.modal-watch-btn img{
+    width: 18px;
+}
+
+.modal-watch-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(27, 158, 189, 0.5);
+}
+
+.modal-watch-btn:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 600px) {
+    .modal-container {
+        border-radius: 0;
+    }
+    
+    .modal-title {
+        font-size: 28px;
+    }
+    
+    .modal-poster-wrapper {
+        height: 542px;
+    }
+}
