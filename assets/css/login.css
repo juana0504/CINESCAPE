@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    position: relative; /* Esto es necesario */
+    overflow: hidden;
+}
+
+.login-container{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+    text-align: center;
+    width: 90%;
+}
+
+.logo-img{
+    width: 180px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.logo-p{
+    color: #dcdcdc;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: #161616; /* mismo que fondo */
+    color: #fff;
+    outline: none;
+    border: 2px solid transparent;
+    background-image:
+        linear-gradient(#161616, #161616), /* Fondo del input */
+        linear-gradient(to right, #00c6ff, #7d2ae8); /* Borde degradado */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
+}
+
+
+::placeholder {
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #2db6f5, #7b3ffb);
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-login:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* === Fondo estilo home.html adaptado al login === */
+
+.background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.imgHome1,
+.imgHome2,
+.imgHome3 {
+    position: absolute;
+    width: min(100%, 430px); /* Toma el 100% o 430px, lo que sea menor */
+    left: 50%;
+    transform: translateX(-50%) skewY(-5deg);
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+}
+
+/* Posiciones específicas como en home */
+.imgHome1 { top: 50px; }
+.imgHome2 { top: 180px; }
+.imgHome3 { top: 310px; }
