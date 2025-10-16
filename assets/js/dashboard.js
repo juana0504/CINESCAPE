@@ -373,3 +373,29 @@ function limpiarBusqueda() {
     searchInput.value = '';
     buscarPeliculas();
 }
+
+
+
+
+// SIDEBAR FUNCTIONALITY
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const sideBar = document.getElementById('side-Bar');
+    const dashboard = document.getElementById('dashboard');
+    
+
+    
+    // Función para abrir/cerrar sidebar
+    function toggleSidebar() {
+        sideBar.classList.toggle('active');
+
+        dashboard.classList.toggle('sidebar-open');
+    }
+    
+    // Event listeners
+    menuBtn.addEventListener('click', toggleSidebar);
+
+    
+
+    
+});

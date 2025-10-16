@@ -10,6 +10,25 @@
 
 <body>
     <main id="dashboard">
+
+        <div id="side-Bar">
+            <h2>Menú Principal</h2>
+            <a href="#">Inicio</a>
+            <a href="#">Aventuras</a>
+            <a href="#">Animadas</a>
+            <a href="#">Drama</a>
+            <a href="#">Comedia</a>
+            <a href="#">Ficción</a>
+            <a href="#">Super Heroes</a>
+
+            <div id="dividir">
+                <a href="#">Mi cuenta</a>
+                <a href="index.html">Cerrar Sesión</a>
+            </div>
+
+        </div>
+
+
         <!-- HEADER FIJO -->
         <header class="dashboard-header">
             <div class="user-info">
@@ -20,7 +39,7 @@
                 </div>
             </div>
             <button class="menu-btn" id="menuBtn">
-                    <img src="assets/img/menu.png" alt="menu desplegable">
+                <img src="assets/img/menu.png" alt="menu desplegable">
             </button>
         </header>
 
@@ -31,8 +50,8 @@
                 <input type="text" id="searchInput" placeholder="Buscar...">
                 <button class="search-btn" id="searchBtn">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="9" cy="9" r="7" stroke="white" stroke-width="2"/>
-                        <path d="M14 14L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="9" cy="9" r="7" stroke="white" stroke-width="2" />
+                        <path d="M14 14L18 18" stroke="white" stroke-width="2" stroke-linecap="round" />
                     </svg>
                 </button>
             </div>
@@ -52,6 +71,7 @@
             <button class="category-btn" data-category="Terror">Terror</button>
         </footer>
     </main>
+
 
     <script src="assets/js/dashboard.js"></script>
 </body>
