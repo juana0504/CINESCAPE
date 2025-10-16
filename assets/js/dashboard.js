@@ -383,14 +383,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sideBar = document.getElementById('side-Bar');
     const dashboard = document.getElementById('dashboard');
     
-    // Crear overlay si no existe
-    let overlay = document.getElementById('overlay');
-    if (!overlay) {
-        overlay = document.createElement('div');
-        overlay.id = 'overlay';
-        overlay.className = 'overlay';
-        document.body.appendChild(overlay);
-    }
+
     
     // Función para abrir/cerrar sidebar
     function toggleSidebar() {
@@ -403,21 +396,6 @@ document.addEventListener('DOMContentLoaded', function() {
     menuBtn.addEventListener('click', toggleSidebar);
     overlay.addEventListener('click', toggleSidebar);
     
-    // Cerrar sidebar al hacer clic en un enlace
-    const sidebarLinks = sideBar.querySelectorAll('a');
-    sidebarLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (sideBar.classList.contains('active')) {
-                toggleSidebar();
-            }
-        });
-    });
+
     
-    // Cerrar sidebar con tecla Escape
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && sideBar.classList.contains('active')) {
-            toggleSidebar();
-        }
-    });
 });
